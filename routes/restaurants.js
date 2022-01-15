@@ -2,7 +2,6 @@ require("dotenv").config();
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
-const axios = require("axios").default;
 
 const queryString = `SELECT  orders.*,customers.name as customer_name ,customers.id as customer_id,menu_items.name,menu_items.price,orders_items.quantity,customers.phone as phone
 FROM orders
@@ -169,12 +168,12 @@ module.exports = (router, db) => {
       }
       db.query(queryString, values)
       .then(() => {
-        sendTextMessages(`You have 1 new order!`, '+17788334525');
+        sendTextMessages(`You have 1 new order!`, '+17782516942');
         delete orderInfo.quantity;
         delete orderInfo.items;
         delete orderInfo.total;
         res.cookie("user", JSON.stringify(orderInfo));
-        res.redirect("/orders/current");
+        res.redirect("/orders/current"); //do something here!!!!!!!!!!!!!!!!!!!!
       })
       .catch(err => res.json(err.message));
     })

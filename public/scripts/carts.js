@@ -16,6 +16,7 @@ $(() => {
       }
     );
   }
+
 });
 
 const findItem = (name, cartObj) => {
