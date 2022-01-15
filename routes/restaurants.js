@@ -174,8 +174,7 @@ module.exports = (router, db) => {
         delete orderInfo.items;
         delete orderInfo.total;
         res.cookie("user", JSON.stringify(orderInfo));
-        res.redirect("/orders/order_id");
-        res.redirect("restaurants/new");
+        res.redirect("/orders/current");
       })
       .catch(err => res.json(err.message));
     })
