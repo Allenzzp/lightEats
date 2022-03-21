@@ -13,28 +13,28 @@ A full-stack food-ordering pick-up application with notifications features on th
 ## Final Product
 
 ### Home Page
-!["Home Page"](https://github.com/Allenzzp/lightEats/blob/master/docs/home-page.png?raw=true)
+!["Home Page"](https://github.com/Allenzzp/lightEats/blob/main/docs/home-page.png)
 
 ### Cart page
-!["cart page"](https://github.com/Allenzzp/lightEats/blob/master/docs/cart.png?raw=true)
+!["cart page"](https://github.com/Allenzzp/lightEats/blob/main/docs/cart.png)
 
 
 ### Restaurant home page
-!["restaurant page"](https://github.com/Allenzzp/lightEats/blob/master/docs/restaurent.png?raw=true)
+!["restaurant page"](https://github.com/Allenzzp/lightEats/blob/main/docs/restaurent.png)
 
 
 ### Client order page
-!["order-page](https://github.com/Allenzzp/lightEats/blob/master/docs/orderStatus.png?raw=true)
+!["order-page](https://github.com/Allenzzp/lightEats/blob/main/docs/orderStatus.png)
 
 
-!["ready to pick up status"](https://github.com/Allenzzp/lightEats/blob/master/docs/readytopickup.png?raw=true)
+!["ready to pick up status"](https://github.com/Allenzzp/lightEats/blob/main/docs/readytopickup.png)
 
 
 
 ### SMS Notifications
-!["SMS!"](https://github.com/Allenzzp/lightEats/blob/master/docs/SMS1.png?raw=true)
+!["SMS!"](https://github.com/Allenzzp/lightEats/blob/main/docs/SMS1.png)
 
-!["SMS2](https://github.com/Allenzzp/lightEats/blob/master/docs/SMS2.png?raw=true)
+!["SMS2](https://github.com/Allenzzp/lightEats/blob/main/docs/SMS2.png)
 
 
 ## Dependencies
