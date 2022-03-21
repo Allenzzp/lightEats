@@ -175,6 +175,9 @@ module.exports = (router, db) => {
         res.cookie("user", JSON.stringify(orderInfo));
         res.redirect("/orders/current"); //do something here!!!!!!!!!!!!!!!!!!!!
       })
+      .then(() => {
+        res.redirect("/restaurants/new");
+      })
       .catch(err => res.json(err.message));
     })
     .catch(err => res.json(err.message));
@@ -182,11 +185,11 @@ module.exports = (router, db) => {
   return router;
 };
 
-const sendTextMessages = function(messages,customer_phone){
+const sendTextMessages = function(messages,customer_phone){ //"You have 1 new order!", '+17782516942'
   client.messages.create({
     body: messages,
     to: customer_phone,
-    from: '+14387963567'
+    from: '+14387963567' //num u bought
   })
   .then(message => console.log(message))
   .catch(error => console.log(error))
